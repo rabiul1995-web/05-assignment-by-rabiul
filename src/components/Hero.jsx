@@ -1,47 +1,52 @@
 function Hero() {
-          return (
-                    <section className="bg-base-200 py-20">
-                              <div className="container mx-auto px-4 text-center">
+  return (
+    <section id="home" className="bg-base-200 py-20">
+      <div className="container mx-auto px-4">
 
-                                        <h1 className="text-4xl md:text-6xl font-bold">
-                                                  Build Your Future with{" "}
-                                                  <span className="text-primary">Code</span>
-                                        </h1>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
-                                        <p className="mt-6 text-lg max-w-2xl mx-auto text-gray-600">
-                                                  Explore modern web technologies, build real-world projects,
-                                                  and develop the skills you need to become a confident developer.
-                                        </p>
+          {/* Left Content */}
+          <div>
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+              Build Your Future with{" "}
+              <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent">
+                Modern Technology
+              </span>
+            </h1>
 
-                                        <button className="btn btn-primary rounded-full mt-8 px-8 shadow-lg">
-                                                  Get Started →
-                                        </button>
-                                        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-  <div className="card bg-base-100 shadow-md p-6">
-    <h3 className="font-bold text-xl">Modern Tools</h3>
-    <p className="mt-2 text-gray-600">
-      Learn React, Tailwind CSS and modern web technologies.
-    </p>
-  </div>
+            <p className="mt-6 text-lg text-gray-600 max-w-xl">
+              Explore modern web technologies, build real-world projects,
+              and develop the skills you need to become a confident developer.
+            </p>
 
-  <div className="card bg-base-100 shadow-md p-6">
-    <h3 className="font-bold text-xl">Real Projects</h3>
-    <p className="mt-2 text-gray-600">
-      Build practical projects that improve your development skills.
-    </p>
-  </div>
+            <div className="mt-8 flex flex-wrap gap-4">
 
-  <div className="card bg-base-100 shadow-md p-6">
-    <h3 className="font-bold text-xl">Career Growth</h3>
-    <p className="mt-2 text-gray-600">
-      Prepare yourself for real-world web development opportunities.
-    </p>
-  </div>
-</div>
+              <button className="btn rounded-full border-0 text-white bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 px-7">
+                Explore Technologies
+              </button>
 
-                              </div>
-                    </section>
-          );
+              <button className="btn btn-outline rounded-full px-7">
+                Learn More
+              </button>
+
+            </div>
+          </div>
+
+          {/* Right Banner */}
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80"
+              alt="Developer working with modern technology"
+              className="w-full rounded-2xl shadow-xl"
+            />
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  );
 }
 
 export default Hero;
+
