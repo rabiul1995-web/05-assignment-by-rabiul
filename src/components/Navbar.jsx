@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav className="navbar bg-base-100 shadow-md">
+    <nav className="navbar sticky top-0 z-50 bg-base-100 shadow-md">
       <div className="container mx-auto px-4">
           <button className="btn btn-ghost md:hidden">
     ☰
