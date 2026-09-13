@@ -2,13 +2,16 @@ function Navbar() {
   return (
     <nav className="navbar bg-base-100 shadow-md">
       <div className="container mx-auto px-4">
+          <button className="btn btn-ghost md:hidden">
+    ☰
+  </button>
         
         {/* Logo */}
-        <div className="flex-1">
-          <a className="text-2xl font-bold text-primary">
-  ⚡ Dev Stack
-</a>
-        </div>
+        <div className="flex-1 text-center md:text-left">
+  <a className="text-2xl font-bold text-primary">
+    ⚡ Dev Stack
+  </a>
+</div>
 
         {/* Menu */}
         <div className="hidden md:flex">
@@ -22,11 +25,13 @@ function Navbar() {
         </div>
 
         {/* Buttons */}
-        <div className="ml-4 flex gap-2">
+        <div className="ml-4 flex gap-2 hidden md:flex">
+         <button className="btn btn-ghost rounded-full">
+    Sign In
+  </button>
           <button className="btn btn-primary rounded-full px-6">
-  Sign Up
-</button>
-          <button className="btn btn-primary">Sign Up</button>
+    Sign Up
+  </button>
         </div>
 
       </div>
