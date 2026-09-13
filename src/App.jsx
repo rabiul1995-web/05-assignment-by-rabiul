@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
+import About from "./components/About";
 function App() {
   return (
     <>
@@ -9,6 +10,7 @@ function App() {
       <Hero />
       <Technologies />
       <Projects />
+      <About />
     </>
   );
 }
