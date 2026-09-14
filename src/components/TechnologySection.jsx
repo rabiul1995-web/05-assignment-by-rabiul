@@ -50,7 +50,7 @@ function TechnologySection() {
         {/* Section Heading */}
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Explore Technologies
+            Explore The <span className="text-pink-600">Technologies</span>
           </h2>
 
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -120,14 +120,15 @@ function TechnologySection() {
 
                     {/* Add Button */}
                     <button
-                      onClick={() => addToStack(technology)}
-                      disabled={isAdded}
-                      className="btn btn-primary rounded-full mt-5 w-full"
-                    >
-                      {isAdded
-                        ? "✓ Added to Stack"
-                        : "Add to Stack"}
-                    </button>
+  onClick={() => addToStack(technology)}
+  className={`btn rounded-full mt-5 w-full ${
+    isAdded
+      ? "bg-gray-400 border-gray-400 text-white"
+      : "bg-blue-900 border-blue-900 text-white hover:bg-blue-800"
+  }`}
+>
+  {isAdded ? "✓ Added to Stack" : "Add to Stack"}
+</button>
 
                   </div>
                 );
@@ -143,12 +144,7 @@ function TechnologySection() {
                   Your Stack ({stack.length})
                 </h3>
 
-                <button
-                  onClick={removeAll}
-                  className="btn btn-sm btn-outline btn-error mt-3"
-                >
-                  Remove All
-                </button>
+
               </div>
 
               {/* Empty State */}
@@ -159,6 +155,7 @@ function TechnologySection() {
                 </p>
               )}
 
+              
               {/* Stack Items */}
               {stack.map((item) => (
                 <div
@@ -198,6 +195,12 @@ function TechnologySection() {
 
                 </div>
               ))}
+              <button
+  onClick={removeAll}
+  className="btn btn-sm btn-outline btn-error mt-4 w-full"
+>
+  Remove All
+</button>
 
             </div>
 

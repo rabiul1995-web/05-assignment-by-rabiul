@@ -8,9 +8,9 @@ function Hero() {
           {/* Left Content */}
           <div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Build Your Future with{" "}
+              Build Your Ideal{" "}
               <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent">
-                Modern Technology
+                Development Stack
               </span>
             </h1>
 
@@ -35,9 +35,9 @@ function Hero() {
           {/* Right Banner */}
           <div>
             <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80"
+              src="/banner-stack.png"
               alt="Developer working with modern technology"
-              className="w-full rounded-2xl shadow-xl"
+              className="w-full rounded-2xl"
             />
           </div>
 

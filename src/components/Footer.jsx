@@ -17,17 +17,17 @@ function Footer() {
             </p>
 
             {/* Social Links */}
-            <div className="flex gap-3 mt-5">
-              <a href="#" className="btn btn-sm btn-circle">
-                GH
+            <div className="flex gap-5 mt-5">
+              <a href="#" className="hover:text-pink-500">
+                GitHub
               </a>
 
-              <a href="#" className="btn btn-sm btn-circle">
-                X
+              <a href="#" className="hover:text-pink-500">
+                Twitter
               </a>
 
-              <a href="#" className="btn btn-sm btn-circle">
-                in
+              <a href="#" className="hover:text-pink-500">
+                LinkedIn
               </a>
             </div>
           </div>
