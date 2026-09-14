@@ -7,9 +7,15 @@ function Footer() {
 
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent">
-              ⚡ Dev Stack
-            </h3>
+            <div className="flex items-center gap-2">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-r from-pink-500 to-violet-600 flex items-center justify-center text-white font-bold">
+                DS
+              </div>
+
+              <span className="text-xl font-bold">
+                Dev Stack
+              </span>
+            </div>
 
             <p className="mt-4 text-gray-600">
               Learn modern web technologies, build practical projects,
